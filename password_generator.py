@@ -27,15 +27,20 @@ def generator_password():
         minuscules.set(True)
 
     if majuscules.get() == True:
+        # upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        # uall_chars += upper
         all_chars += string.ascii_uppercase
 
     if minuscules.get() == True:
+        # lower = "abcdefghijklmnopqrstuvwxyz"
         all_chars += string.ascii_lowercase
 
     if chiffres.get() == True:
+        # numbers = "0123456789"
         all_chars += string.digits
 
     if symboles.get() == True:
+        # symbols = "[]{}()*:;/_-"
         all_chars += string.punctuation
 
     # Le souci avec Sample : ValueError: Sample larger than population or is negative
